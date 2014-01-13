@@ -1,5 +1,5 @@
 """
-Django settings for framework project.
+Django settings for harrisonliddiard project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -47,9 +47,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'framework.urls'
+ROOT_URLCONF = 'harrisonliddiard.urls'
 
-WSGI_APPLICATION = 'framework.wsgi.application'
+WSGI_APPLICATION = 'harrisonliddiard.wsgi.application'
 
 
 # Database
