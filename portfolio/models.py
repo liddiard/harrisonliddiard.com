@@ -4,6 +4,7 @@ MEDIA_BASE = 'portfolio/img/'
 
 class Project(models.Model):
     title = models.CharField(max_length=64)
+    slug = models.SlugField(max_length=64)
     descriptor = models.CharField(max_length=128)
     cover_image = models.ImageField(upload_to=MEDIA_BASE+'covers')
     involvement = models.CharField(max_length=32)
@@ -28,6 +29,7 @@ class Image(models.Model):
 
 class Skill(models.Model):
     name = models.CharField(max_length=32)
+    slug = models.SlugField(max_length=32)
     parent = models.ForeignKey('self', null=True)
 
     def __unicode__(self):
