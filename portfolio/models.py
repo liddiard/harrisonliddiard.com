@@ -8,6 +8,7 @@ class Project(models.Model):
     descriptor = models.CharField(max_length=128)
     cover_image = models.ImageField(upload_to=MEDIA_BASE+'covers')
     involvement = models.CharField(max_length=32)
+    skills = models.ManyToManyField('Skill')
     link = models.URLField(blank=True)
     summary = models.TextField()
     date_added = models.DateField(auto_now_add=True)
