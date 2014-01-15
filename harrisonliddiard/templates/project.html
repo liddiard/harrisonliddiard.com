@@ -2,11 +2,24 @@
 
 {% block content %}
 
-<h1>{{ project.title }}</h1>
+<aside class="project">
+    <h1>{{ project.title }}</h1>
+    <span class="descriptor">{{ project.descriptor }}</span>
+    <span class="involvement">{{ project.involvement }}</span>
+    <div class="skills">
+        {% for skill in skills %}
+            <span class="skill">{{ skill.name }}</span>
+        {% endfor %}
+    </div>
+    <a class="ext-link" href="{{ project.link }}" target="blank">{{ project.link }}</a>
+    <a class="ext-link" href="{{ project.github }}" target="blank">{{ project.github }}</a>
+    <p class="summary">{{ project.summary }}</p>
+</aside>
 
-Skills:
-{% for skill in skills %}
-    {{ skill.name }}
-{% endfor %}
+<div id="rotator">
+    {% for image in gallery %}
+        <img src="{{ STATIC_URL }}{{ image.image }}"/>
+    {% endfor %} 
+</div>
 
 {% endblock %}

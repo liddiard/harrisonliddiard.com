@@ -62,16 +62,6 @@ ROOT_URLCONF = 'harrisonliddiard.urls'
 WSGI_APPLICATION = 'harrisonliddiard.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/1.6/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
@@ -89,3 +79,5 @@ USE_TZ = True
 TEMPLATE_DIRS = (
     BASE_DIR+'/templates',
 )
+
+MEDIA_URL = '/media/'

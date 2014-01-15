@@ -3,11 +3,17 @@
 <head>
     <meta charset="utf-8">
     <title>{% block title %}Harrison Liddiard{% endblock %}</title>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/main.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/flexslider.css">
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery.flexslider-min.js"></script>
     <script src="{{ STATIC_URL }}js/main.js"></script>
 </head>
 <body>
+    <header>
+        <a href="{% url 'front' %}"><h1><img class="mug" src="{{ STATIC_URL }}img/mug.jpg"/>Harrison Liddiard</h1></a>
+    </header>
 {% block content %}{% endblock %}
 </body>
 </html>
