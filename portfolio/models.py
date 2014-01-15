@@ -31,7 +31,7 @@ class Image(models.Model):
 class Skill(models.Model):
     name = models.CharField(max_length=32)
     slug = models.SlugField(max_length=32)
-    parent = models.ForeignKey('self', null=True)
+    parent = models.ForeignKey('self', null=True, blank=True)
 
     def __unicode__(self):
         return self.name

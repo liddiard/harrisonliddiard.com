@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{ skill.name }}</h1>
+
+{% for project in projects %}
+    {{ project.title }}
+{% endfor %}
+
+{% endblock %}
