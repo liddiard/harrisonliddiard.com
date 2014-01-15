@@ -42,3 +42,7 @@ class SkillView(TemplateView):
         context['skill'] = skill
         context['projects'] = projects
         return context
+
+
+class ResumeView(TemplateView):
+    pass
