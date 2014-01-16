@@ -44,7 +44,7 @@ aside.project {
   aside.project h1 {
     margin: 0; }
   aside.project p {
-    font-size: 14px; }
+    font-size: 0.9em; }
   aside.project .descriptor, aside.project .involvement, aside.project .project-link, aside.project .github-link {
     display: block; }
   aside.project .project-link {
