@@ -63,6 +63,12 @@ aside.project {
       margin: 0.1em 0;
       font-size: 0.9em; }
 
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  margin: 0.5em 0;
+  line-height: 1.5; }
+
 img.mug {
   border-radius: 50%;
   vertical-align: bottom;
