@@ -10,7 +10,7 @@
     <div class="skills">
         <strong>Skills:</strong>
         {% for skill in skills %}
-            <span class="skill">{{ skill.name }}</span>
+            <a class="skill" href="{% url 'skill' skill.slug %}">{{ skill.name }}</a>
         {% endfor %}
     </div>
     <span class="github-link"><strong>GitHub:</strong> <a href="{{ project.github }}" target="blank">{{ project.github }}</a></span>
