@@ -39,7 +39,7 @@ section.rotator {
 aside.project {
   float: left;
   width: 360px;
-  padding: 0 40px;
+  padding: 0 0 0 40px;
   line-height: 1.5; }
   aside.project h1 {
     margin: 0; }
