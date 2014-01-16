@@ -49,6 +49,7 @@ header {
 section {
     &.rotator {
         margin: 0 40px 0 420px;
+        overflow-x: hidden;
     }
 }
 
@@ -97,4 +98,41 @@ img.mug {
     border-radius: 50%;
     vertical-align: bottom;
     margin-right: 0.22em;
+}
+
+@media (max-width: 1024px) {
+    aside.project {
+        padding-left: 20px;
+    }
+
+    section.rotator {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 860px) {
+    aside.project {
+        padding: 0 10px;
+        float: none;
+        width: inherit;
+    }
+
+    section.rotator {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    header {
+        padding: 0.5em 0 0.6em 0;
+        margin-bottom: 20px;
+
+        h1 {
+            font-size: 2em;
+        }
+    }
+
+    img.mug {
+        width: 40px;
+    }
 }
