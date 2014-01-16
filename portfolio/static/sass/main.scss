@@ -7,6 +7,7 @@ body {
     padding: 0;
     background-color: #f6f6f6;
     color: #444;
+    text-shadow: 1px 1px white;
 }
 
 a {
@@ -33,6 +34,7 @@ header {
     text-align: center;
     padding: 1em 0 1.4em 0;
     box-shadow: 0 0 5px rgba(0,0,0, 0.2);
+    margin-bottom: 40px;
 
     a:hover {
         text-decoration: none;
@@ -44,13 +46,53 @@ header {
     }
 }
 
-aside {
+section {
+    &.rotator {
+        margin: 0 40px 0 420px;
+    }
+}
+
+aside.project {
+    float: left;
     width: 360px;
-    padding: 1em 2em;
+    padding: 0 40px;
+    line-height: 1.5;
+
+    h1 {
+        margin: 0;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .descriptor, .involvement, .project-link, .github-link {
+        display: block;
+    }
+    
+    .project-link {
+        margin-bottom: 1.5em;
+    }
+
+    .github-link {
+        margin-bottom: 1.5em;
+    }
+
+    .skills {
+        margin: 0.5em 0;
+
+        .skill {
+            display: inline-block;
+            border: 1px solid rgba(0,0,0, 0.1);
+            padding: 0 0.4em;
+            margin: 0.2em 0;
+            font-size: 0.9em;
+        }
+    }
 }
 
 img.mug {
     border-radius: 50%;
     vertical-align: bottom;
-    margin-right: 0.2em;
+    margin-right: 0.22em;
 }

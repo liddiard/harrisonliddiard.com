@@ -4,7 +4,8 @@ body {
   border: 0;
   padding: 0;
   background-color: #f6f6f6;
-  color: #444; }
+  color: #444;
+  text-shadow: 1px 1px white; }
 
 a {
   color: black;
@@ -24,18 +25,42 @@ header {
   background-color: white;
   text-align: center;
   padding: 1em 0 1.4em 0;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px; }
   header a:hover {
     text-decoration: none; }
   header h1 {
     font-size: 4em;
     margin: 0 auto; }
 
-aside {
+section.rotator {
+  margin: 0 40px 0 420px; }
+
+aside.project {
+  float: left;
   width: 360px;
-  padding: 1em 2em; }
+  padding: 0 40px;
+  line-height: 1.5; }
+  aside.project h1 {
+    margin: 0; }
+  aside.project p {
+    font-size: 14px; }
+  aside.project .descriptor, aside.project .involvement, aside.project .project-link, aside.project .github-link {
+    display: block; }
+  aside.project .project-link {
+    margin-bottom: 1.5em; }
+  aside.project .github-link {
+    margin-bottom: 1.5em; }
+  aside.project .skills {
+    margin: 0.5em 0; }
+    aside.project .skills .skill {
+      display: inline-block;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 0 0.4em;
+      margin: 0.2em 0;
+      font-size: 0.9em; }
 
 img.mug {
   border-radius: 50%;
   vertical-align: bottom;
-  margin-right: 0.2em; }
+  margin-right: 0.22em; }

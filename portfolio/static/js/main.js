@@ -1,5 +1,5 @@
 $(window).load(function() {
-    $('#rotator').flexslider({
+    $('.flexslider').flexslider({
         animation: "slide"
     });
 });
