@@ -45,4 +45,5 @@ class SkillView(TemplateView):
 
 
 class ResumeView(TemplateView):
-    pass
+    
+    template_name = "resume.html"

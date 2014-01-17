@@ -11,5 +11,6 @@ urlpatterns = patterns('',
     url(r'^$', views.FrontView.as_view(), name='front'),
     url(r'^project/(?P<project>\S+)/$', views.ProjectView.as_view(), name='project'),
     url(r'^skill/(?P<skill>\S+)/$', views.SkillView.as_view(), name='skill'),
+    url(r'^resume/$', views.ResumeView.as_view(), name='resume'),
     url(r'^admin/', include(admin.site.urls)),
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
