@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load markdown %}
 
 {% block title %}{{ project.title }} | Harrison Liddiard{% endblock %}
 
@@ -16,7 +17,7 @@
         {% endfor %}
     </div>
     <span class="github-link"><strong>GitHub:</strong> <a href="{{ project.github }}" target="blank">{{ project.github }}</a></span>
-    <p class="summary">{{ project.summary }}</p>
+    <p class="summary">{{ project.summary|markdown }}</p>
 </aside>
 
 <section class="rotator">
