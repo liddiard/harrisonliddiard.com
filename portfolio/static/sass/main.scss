@@ -107,6 +107,11 @@ img.mug {
     margin-right: 0.22em;
 }
 
+#resume {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 @media (max-width: 1024px) {
     aside.project {
         padding-left: 20px;
@@ -143,3 +148,4 @@ img.mug {
         width: 40px;
     }
 }
+
