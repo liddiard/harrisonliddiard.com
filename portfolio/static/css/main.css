@@ -67,7 +67,8 @@ footer {
   text-align: center;
   font-size: 0.8em;
   margin: 0.5em 0;
-  line-height: 1.5; }
+  line-height: 1.5;
+  clear: both; }
 
 img.mug {
   border-radius: 50%;
@@ -83,7 +84,8 @@ img.mug {
     padding-left: 20px; }
 
   section.rotator {
-    margin-right: 20px; } }
+    margin-right: 20px;
+    margin-left: 400px; } }
 @media (max-width: 860px) {
   aside.project {
     padding: 0 10px;
