@@ -49,11 +49,12 @@ aside.project {
   aside.project .descriptor, aside.project .involvement, aside.project .project-link, aside.project .github-link {
     display: block; }
   aside.project .project-link {
-    margin-bottom: 1.5em; }
+    margin-bottom: 1.5em;
+    font-weight: bold; }
   aside.project .github-link {
     margin-bottom: 1.5em; }
   aside.project .skills {
-    margin: 0.5em 0; }
+    margin: 0.5em 0 0.75em 0; }
     aside.project .skills .skill {
       display: inline-block;
       background-color: black;

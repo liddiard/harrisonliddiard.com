@@ -73,6 +73,7 @@ aside.project {
     
     .project-link {
         margin-bottom: 1.5em;
+        font-weight: bold;
     }
 
     .github-link {
@@ -80,7 +81,7 @@ aside.project {
     }
 
     .skills {
-        margin: 0.5em 0;
+        margin: 0.5em 0 0.75em 0;
 
         .skill {
             display: inline-block;
