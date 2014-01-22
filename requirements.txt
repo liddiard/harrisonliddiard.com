@@ -5,5 +5,6 @@ argparse==1.2.1
 boto==2.23.0
 dj-database-url==0.2.2
 django-storages==1.1.8
+markdown2==2.2.0
 psycopg2==2.5.2
 wsgiref==0.1.2
