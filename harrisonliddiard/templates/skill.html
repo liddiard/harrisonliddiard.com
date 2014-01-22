@@ -6,8 +6,10 @@
 
 <h1>{{ skill.name|capfirst }} projects</h1>
 
+<section class="projects">
 {% for project in projects %}
-    {{ project.title }}
+    <a href="{% url 'project' project.slug %}"><img src="{{ MEDIA_URL }}{{ project.cover_image }}"/></a>
 {% endfor %}
+</section>
 
 {% endblock %}

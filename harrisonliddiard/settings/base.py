@@ -40,6 +40,7 @@ DJANGO_APPS = (
 
 THIRD_PARTY_APPS = (
     'south',
+    'storages'
 )
 
 LOCAL_APPS = (
@@ -80,4 +81,3 @@ TEMPLATE_DIRS = (
     BASE_DIR+'/templates',
 )
 
-MEDIA_URL = '/media/'
