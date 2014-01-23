@@ -35,15 +35,26 @@ header {
 
 section.projects a {
   position: relative; }
-section .card-text {
+section .card-contents {
+  display: table;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.5);
-  opacity: 0; }
-  section .card-text:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+  opacity: 0;
+  text-align: center;
+  webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s; }
+  section .card-contents:hover {
     opacity: 1; }
+  section .card-contents .card-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; }
+  section .card-contents h2 {
+    font-weight: bold;
+    margin: 0.5em; }
 section.rotator {
   margin: 0 40px 0 420px;
   overflow-x: hidden; }

@@ -6,7 +6,12 @@
 {% for project in projects %}
     <a href="{% url 'project' project.slug %}">
         <img src="{{ MEDIA_URL }}{{ project.cover_image }}"/>
-        <div class="card-text"></div>
+        <div class="card-contents">
+            <div class="card-text">
+                <h2>{{ project.title }}</h2>
+                <span class="descriptor">{{ project.descriptor }}</span>
+            </div>
+        </div>
     </a>
 {% endfor %}
 </section>
