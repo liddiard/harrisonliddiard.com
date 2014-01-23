@@ -6,8 +6,7 @@
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/main.css">
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/flexslider.css">
-    <!--<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>-->
-    <script src="{{ STATIC_URL }}js/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="{{ STATIC_URL }}js/jquery.flexslider-min.js"></script>
     <script src="{{ STATIC_URL }}js/main.js"></script>
 </head>
@@ -21,7 +20,7 @@
     <footer>
         <div class="refer">
             <a href="{% url 'front' %}">Projects</a> | 
-            <a href="#">Resume</a> | 
+            <a href="{% url 'resume' %}">Resume</a> | 
             <a href="http://twitter.com/HLiddiard/">Twitter</a> | 
             <a href="http://github.com/liddiard/">GitHub</a>
         </div>
