@@ -21,6 +21,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   color: black; }
 
+h1 {
+  font-size: 200%; }
+
 header {
   background-color: white;
   text-align: center;
@@ -73,6 +76,31 @@ section .card-contents {
 section.rotator {
   margin: 0 40px 0 420px;
   overflow-x: hidden; }
+section#resume {
+  max-width: 960px; }
+  section#resume h1, section#resume h2, section#resume h3, section#resume h4, section#resume h5, section#resume h6 {
+    margin: 0; }
+  section#resume h1, section#resume h2 {
+    margin-bottom: 1em; }
+  section#resume h3, section#resume h4 {
+    margin-bottom: 0.25em; }
+  section#resume .col {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-right: 2em; }
+  section#resume .item {
+    margin-bottom: 2em;
+    border-left: 1px solid #aaa;
+    padding-left: 1em; }
+  section#resume .position {
+    font-weight: bold; }
+  section#resume .date {
+    font-weight: normal;
+    float: right;
+    color: #aaa; }
 
 aside.project {
   float: left;
