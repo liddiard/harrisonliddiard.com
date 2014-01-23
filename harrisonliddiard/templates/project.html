@@ -8,7 +8,9 @@
 <aside class="project">
     <h1>{{ project.title }}</h1>
     <span class="descriptor">{{ project.descriptor }}</span>
-    <a class="project-link" href="{{ project.link }}" target="blank">{{ project.link }} <img src="{{ STATIC_URL }}img/external_link.png"/></a>
+    {% if project.link %}
+        <a class="project-link" href="{{ project.link }}" target="blank">{{ project.link }} <img src="{{ STATIC_URL }}img/external_link.png"/></a>
+    {% endif %}
     <span class="involvement"><strong>Involvement:</strong> {{ project.involvement }}</span>
     <div class="skills">
         <strong>Skills:</strong>
@@ -16,7 +18,9 @@
             <a class="skill" href="{% url 'skill' skill.slug %}">{{ skill.name }}</a>
         {% endfor %}
     </div>
-    <span class="github-link"><strong>GitHub:</strong> <a href="{{ project.github }}" target="blank">{{ project.github }}</a></span>
+    {% if project.github %}
+        <span class="github-link"><strong>GitHub:</strong> <a href="{{ project.github }}" target="blank">{{ project.github }}</a></span>
+    {% endif %}
     <p class="summary">{{ project.summary|markdown }}</p>
 </aside>
 
