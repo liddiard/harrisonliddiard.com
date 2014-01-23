@@ -4,7 +4,10 @@
 
 <section class="projects">
 {% for project in projects %}
-    <a href="{% url 'project' project.slug %}"><img src="{{ MEDIA_URL }}{{ project.cover_image }}"/></a>
+    <a href="{% url 'project' project.slug %}">
+        <img src="{{ MEDIA_URL }}{{ project.cover_image }}"/>
+        <div class="card-text"></div>
+    </a>
 {% endfor %}
 </section>
 

@@ -33,6 +33,17 @@ header {
     font-size: 4em;
     margin: 0 auto; }
 
+section.projects a {
+  position: relative; }
+section .card-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0; }
+  section .card-text:hover {
+    opacity: 1; }
 section.rotator {
   margin: 0 40px 0 420px;
   overflow-x: hidden; }
