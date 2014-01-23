@@ -71,6 +71,7 @@ section {
         text-align: center;
         webkit-transition: opacity 0.25s; 
         transition: opacity 0.25s; 
+        font-family: 'Oxygen', sans-serif;
 
         &:hover {
             opacity: 1;
@@ -85,7 +86,7 @@ section {
         h2 {
             color: white;
             font-weight: bold;
-            margin: 0.5em;
+            margin: 0.25em;
         }
 
         .descriptor {
