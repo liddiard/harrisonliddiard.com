@@ -20,14 +20,16 @@
     <p class="summary">{{ project.summary|markdown }}</p>
 </aside>
 
-<section class="rotator">
-    <div class="flexslider">
-        <ul class="slides">
-        {% for image in gallery %}
-            <li><img src="{{ MEDIA_URL }}{{ image.image }}"/></li>
-        {% endfor %} 
-        </ul>
-    </div>
-</section>
+{% if gallery %}
+    <section class="rotator">
+        <div class="flexslider">
+            <ul class="slides">
+            {% for image in gallery %}
+                <li><img src="{{ MEDIA_URL }}{{ image.image }}"/></li>
+            {% endfor %} 
+            </ul>
+        </div>
+    </section>
+{% endif %}
 
 {% endblock %}
