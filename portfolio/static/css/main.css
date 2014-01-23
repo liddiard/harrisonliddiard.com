@@ -67,7 +67,7 @@ section .card-contents {
   section .card-contents h2 {
     color: white;
     font-weight: bold;
-    margin: 0.2em; }
+    margin: 0.1em; }
   section .card-contents .descriptor {
     color: #ccc; }
 section.rotator {
