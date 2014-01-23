@@ -4,12 +4,20 @@
 
 {% block content %}
 
-<h1>{{ skill.name|capfirst }} projects</h1>
-
 <section class="projects">
-{% for project in projects %}
-    <a href="{% url 'project' project.slug %}"><img src="{{ MEDIA_URL }}{{ project.cover_image }}"/></a>
-{% endfor %}
+    <h1>{{ skill.name|capfirst }} projects</h1>
+
+    {% for project in projects %}
+        <a href="{% url 'project' project.slug %}">
+            <img src="{{ MEDIA_URL }}{{ project.cover_image }}"/>
+            <div class="card-contents">
+                <div class="card-text">
+                    <h2>{{ project.title }}</h2>
+                    <span class="descriptor">{{ project.descriptor }}</span>
+                </div>
+            </div>
+        </a>
+    {% endfor %}
 </section>
 
 {% endblock %}
