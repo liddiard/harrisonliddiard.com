@@ -88,19 +88,31 @@ section#resume {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: 50%;
     float: left;
-    padding-right: 2em; }
+    padding-right: 3em; }
+    section#resume .col.left {
+      width: 60%; }
+    section#resume .col.right {
+      width: 40%; }
   section#resume .item {
     margin-bottom: 2em;
     border-left: 1px solid #aaa;
     padding-left: 1em; }
-  section#resume .position {
+  section#resume .position, section#resume .school {
     font-weight: bold; }
   section#resume .date {
     font-weight: normal;
     float: right;
     color: #aaa; }
+  section#resume .references {
+    clear: both;
+    padding: 0.5em 0;
+    color: black; }
+  section#resume .footer {
+    clear: both;
+    padding: 1.5em 0;
+    font-size: 0.8em;
+    text-align: center; }
 
 aside.project {
   float: left;

@@ -126,9 +126,16 @@ section {
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
-            width: 50%;
             float: left;
-            padding-right: 2em;
+            padding-right: 3em;
+
+            &.left {
+                width: 60%;
+            }
+
+            &.right {
+                width: 40%;
+            }
         }
 
         .item {
@@ -137,7 +144,7 @@ section {
             padding-left: 1em;
         }
 
-        .position {
+        .position, .school {
             font-weight: bold;
         }
         
@@ -145,6 +152,19 @@ section {
             font-weight: normal;
             float: right;
             color: #aaa;
+        }
+
+        .references {
+            clear: both;
+            padding: 0.5em 0;
+            color: black;
+        }
+
+        .footer {
+            clear: both;
+            padding: 1.5em 0;
+            font-size: 0.8em;
+            text-align: center;
         }
     }
 }
