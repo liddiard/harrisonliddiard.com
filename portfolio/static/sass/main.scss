@@ -108,6 +108,8 @@ section {
     }
 
     &#resume {
+        margin: 0 auto;
+        padding: 10px;
         max-width: 960px;
 
         h1, h2, h3, h4, h5, h6 {
@@ -225,11 +227,6 @@ img.mug {
     margin-right: 0.22em;
 }
 
-#resume {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
 @media (max-width: 1024px) {
     aside.project {
         padding-left: 20px;
@@ -265,6 +262,14 @@ img.mug {
 
     img.mug {
         width: 40px;
+    }
+
+    section#resume .col {
+        float: none;
+
+        &.left, &.right {
+            width: 100%;
+        }
     }
 }
 

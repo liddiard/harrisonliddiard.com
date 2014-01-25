@@ -77,6 +77,8 @@ section.rotator {
   margin: 0 40px 0 420px;
   overflow-x: hidden; }
 section#resume {
+  margin: 0 auto;
+  padding: 10px;
   max-width: 960px; }
   section#resume h1, section#resume h2, section#resume h3, section#resume h4, section#resume h5, section#resume h6 {
     margin: 0; }
@@ -153,10 +155,6 @@ img.mug {
   vertical-align: bottom;
   margin-right: 0.22em; }
 
-#resume {
-  max-width: 960px;
-  margin: 0 auto; }
-
 @media (max-width: 1024px) {
   aside.project {
     padding-left: 20px; }
@@ -180,4 +178,9 @@ img.mug {
       font-size: 2em; }
 
   img.mug {
-    width: 40px; } }
+    width: 40px; }
+
+  section#resume .col {
+    float: none; }
+    section#resume .col.left, section#resume .col.right {
+      width: 100%; } }
