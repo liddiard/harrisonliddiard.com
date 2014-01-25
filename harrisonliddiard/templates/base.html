@@ -12,7 +12,14 @@
 </head>
 <body>
     <header>
-        <a href="{% url 'front' %}"><h1><img class="mug" src="{{ STATIC_URL }}img/mug.jpg"/>Harrison Liddiard</h1></a>
+        <a id="banner" href="{% url 'front' %}"><h1><img class="mug" src="{{ STATIC_URL }}img/mug.jpg"/>Harrison Liddiard</h1></a>
+        <nav>
+            <ul>
+                <li><a href="{% url 'resume' %}">Resume</a></li>
+                <li><a href="http://github.com/liddiard/">GitHub</a></li>
+                <li><a href="http://about.me/harrisonliddiard/">about.me</a></li>
+            </ul>
+        </nav>
     </header>
 
     {% block content %}{% endblock %}
@@ -21,8 +28,8 @@
         <div class="refer">
             <a href="{% url 'front' %}">Projects</a> | 
             <a href="{% url 'resume' %}">Resume</a> | 
-            <a href="http://twitter.com/HLiddiard/">Twitter</a> | 
-            <a href="http://github.com/liddiard/">GitHub</a>
+            <a href="http://github.com/liddiard/">GitHub</a> | 
+            <a href="http://about.me/harrisonliddiard/">about.me</a>
         </div>
         <div class="copyright">&copy; 2014 Harrison Liddiard</div>
     </footer>
