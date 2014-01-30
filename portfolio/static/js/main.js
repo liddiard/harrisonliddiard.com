@@ -1,7 +1,5 @@
 $(window).load(function() {
-    $('.flexslider').flexslider({
-        animation: "slide"
-    });
+    $('.flexslider').flexslider({});
 });
 
 $(document).ready(function(){
