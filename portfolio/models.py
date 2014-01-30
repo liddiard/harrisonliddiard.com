@@ -26,7 +26,7 @@ class Image(models.Model):
     position = models.PositiveIntegerField(default=0)
 
     def __unicode__(self):
-        return str(self.project)
+        return "%s (%s)" % (self.project, self.position)
 
 
 class Skill(models.Model):
