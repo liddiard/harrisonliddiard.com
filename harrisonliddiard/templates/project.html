@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load markdown %}
 
+{% block meta %}{{ project.summary|markdown|striptags|truncatechars:153 }}&hellip;{% endblock %}
+
 {% block title %}{{ project.title }} | Harrison Liddiard{% endblock %}
 
 {% block content %}
