@@ -171,7 +171,8 @@ img.mug {
 @media (max-width: 860px) {
   aside.project {
     float: none;
-    width: inherit; }
+    width: inherit;
+    padding-right: 20px; }
 
   section.rotator {
     margin: 20px; } }
