@@ -61,7 +61,7 @@ section .card-contents {
   top: 0;
   color: white;
   text-shadow: 0 0 6px black;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.85);
   opacity: 0;
   text-align: center;
   -webkit-transition: opacity 0.25s;
