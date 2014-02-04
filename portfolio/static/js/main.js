@@ -3,4 +3,7 @@ $(window).load(function() {
 });
 
 $(document).ready(function(){
+    $('.print').click(function(){
+        window.print();
+    });
 });

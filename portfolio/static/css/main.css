@@ -41,6 +41,29 @@ header {
     margin: 0 auto; }
   header #banner:hover {
     text-decoration: none; }
+  header #tagline {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 1.25em;
+    display: none; }
+  header ul#contact {
+    font-family: 'Oxygen', sans-serif;
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 0.4em 0; }
+    header ul#contact img {
+      width: 18px;
+      vertical-align: bottom;
+      margin-right: 0.2em; }
+    header ul#contact li {
+      display: inline-block;
+      padding: 0 1em; }
 
 section.projects {
   margin: 0 5px 25px 5px;
@@ -88,8 +111,8 @@ section#resume {
   max-width: 960px; }
   section#resume h1, section#resume h2, section#resume h3, section#resume h4, section#resume h5, section#resume h6 {
     margin: 0; }
-  section#resume h1, section#resume h2 {
-    margin-bottom: 1em; }
+  section#resume h2 {
+    margin: 1.5em 0 0.75em 0; }
   section#resume h3, section#resume h4 {
     margin-bottom: 0.25em; }
   section#resume .col {
@@ -112,6 +135,14 @@ section#resume {
     font-weight: normal;
     float: right;
     color: #aaa; }
+  section#resume .print {
+    float: right;
+    color: black;
+    cursor: pointer;
+    font-weight: bold; }
+    section#resume .print img {
+      padding-left: 1px;
+      vertical-align: bottom; }
   section#resume .references {
     clear: both;
     padding: 0.5em 0;
@@ -161,14 +192,14 @@ img.mug {
   vertical-align: bottom;
   margin-right: 0.22em; }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   aside.project {
     padding-left: 20px; }
 
   section.rotator {
     margin-right: 20px;
     margin-left: 400px; } }
-@media (max-width: 860px) {
+@media screen and (max-width: 860px) {
   aside.project {
     float: none;
     width: inherit;
@@ -176,7 +207,7 @@ img.mug {
 
   section.rotator {
     margin: 20px; } }
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
   header {
     padding: 0.5em 0 0.1em 0;
     margin-bottom: 20px; }
@@ -193,9 +224,44 @@ img.mug {
 
   section.projects a, section.projects img {
     height: 175px; } }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   section.projects a, section.projects img {
     height: 135px; } }
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   section.projects a, section.projects img {
     height: 100px; } }
+@media print {
+  body {
+    background-color: white;
+    font-size: 70%; }
+
+  header {
+    box-shadow: none;
+    margin-bottom: 0;
+    padding-bottom: 0; }
+    header ul#contact {
+      display: block; }
+    header #tagline {
+      display: block; }
+
+  nav {
+    display: none; }
+
+  footer {
+    display: none; }
+
+  img.mug {
+    display: none; }
+
+  section#resume {
+    padding: 0; }
+    section#resume h1 {
+      display: none; }
+    section#resume h2 {
+      font-size: 200%; }
+    section#resume .item {
+      border-left: 1px solid #ccc; }
+    section#resume .references {
+      display: none; }
+    section#resume .print {
+      display: none; } }

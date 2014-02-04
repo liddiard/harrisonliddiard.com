@@ -60,6 +60,37 @@ header {
     #banner:hover {
         text-decoration: none;
     }
+
+    #tagline {
+        font-family: 'Oxygen', sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 1.25em;
+        display: none;
+    }
+
+    ul#contact {
+        font-family: 'Oxygen', sans-serif;
+        display: none;
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+        font-size: 1.2em;
+        margin: 0;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 0.4em 0;
+
+        img {
+            width: 18px;
+            vertical-align: bottom;
+            margin-right: 0.2em;
+        }
+
+        li {
+            display: inline-block;
+            padding: 0 1em;
+        }
+    }
 }
 
 section {
@@ -128,8 +159,8 @@ section {
             margin: 0;
         }
 
-        h1, h2 {
-            margin-bottom: 1em;
+        h2 {
+            margin: 1.5em 0 0.75em 0;
         }
 
         h3, h4 {
@@ -166,6 +197,18 @@ section {
             font-weight: normal;
             float: right;
             color: #aaa;
+        }
+
+        .print {
+            float: right;
+            color: black;
+            cursor: pointer;
+            font-weight: bold;
+
+            img {
+                padding-left: 1px;
+                vertical-align: bottom;
+            }
         }
 
         .references {
@@ -239,7 +282,7 @@ img.mug {
     margin-right: 0.22em;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     aside.project {
         padding-left: 20px;
     }
@@ -250,7 +293,7 @@ img.mug {
     }
 }
 
-@media (max-width: 860px) {
+@media screen and (max-width: 860px) {
     aside.project {
         float: none;
         width: inherit;
@@ -262,7 +305,7 @@ img.mug {
     }
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
     header {
         padding: 0.5em 0 0.1em 0;
         margin-bottom: 20px;
@@ -291,7 +334,7 @@ img.mug {
     }
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     section.projects {
         a, img {
             height: 135px;
@@ -299,10 +342,67 @@ img.mug {
     }
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
     section.projects {
         a, img {
             height: 100px;
+        }
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+        font-size: 70%;
+    }
+
+    header {
+        box-shadow: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        ul#contact {
+            display: block;
+        }
+
+        #tagline {
+            display: block;
+        }
+    }
+
+    nav {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    img.mug {
+        display: none;
+    }
+
+    section#resume {
+        padding: 0;
+
+        h1 {
+            display: none;
+        }
+
+        h2 {
+            font-size: 200%;
+        }
+
+        .item {
+            border-left: 1px solid #ccc;
+        }
+
+        .references {
+            display: none;
+        }
+        
+        .print {
+            display: none;
         }
     }
 }
