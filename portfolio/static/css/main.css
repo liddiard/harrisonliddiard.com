@@ -122,9 +122,10 @@ section#resume {
     float: left; }
     section#resume .col.left {
       padding-right: 3.5em;
-      width: 64%; }
+      width: 63%; }
     section#resume .col.right {
-      width: 36%; }
+      padding-right: 1em;
+      width: 37%; }
   section#resume .item {
     margin-bottom: 2em;
     border-left: 1px solid #aaa;

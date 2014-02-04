@@ -168,7 +168,7 @@ section {
         }
 
         .col {
-            $LEFT_COL_WIDTH: 64%;
+            $LEFT_COL_WIDTH: 63%;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -180,6 +180,7 @@ section {
             }
 
             &.right {
+                padding-right: 1em;
                 width: 100% - $LEFT_COL_WIDTH;
             }
         }
