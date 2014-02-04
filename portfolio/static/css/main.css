@@ -54,8 +54,8 @@ header {
     text-align: center;
     font-size: 1.2em;
     margin: 0;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
     padding: 0.4em 0; }
     header ul#contact img {
       width: 18px;
@@ -262,7 +262,7 @@ img.mug {
     section#resume h2 {
       font-size: 200%; }
     section#resume .item {
-      border-left: 1px solid #ccc; }
+      border-left: 1px solid #bbb; }
     section#resume .references {
       display: none; }
     section#resume .print {
