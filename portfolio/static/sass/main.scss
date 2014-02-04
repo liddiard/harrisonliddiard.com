@@ -168,18 +168,19 @@ section {
         }
 
         .col {
+            $LEFT_COL_WIDTH: 64%;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
             float: left;
-            padding-right: 3em;
 
             &.left {
-                width: 60%;
+                padding-right: 3.5em;
+                width: $LEFT_COL_WIDTH;
             }
 
             &.right {
-                width: 40%;
+                width: 100% - $LEFT_COL_WIDTH;
             }
         }
 
@@ -324,6 +325,7 @@ img.mug {
 
         &.left, &.right {
             width: 100%;
+            padding: 0;
         }
     }
 
@@ -353,7 +355,7 @@ img.mug {
 @media print {
     body {
         background-color: white;
-        font-size: 70%;
+        font-size: 71%;
     }
 
     header {

@@ -119,12 +119,12 @@ section#resume {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    float: left;
-    padding-right: 3em; }
+    float: left; }
     section#resume .col.left {
-      width: 60%; }
+      padding-right: 3.5em;
+      width: 64%; }
     section#resume .col.right {
-      width: 40%; }
+      width: 36%; }
   section#resume .item {
     margin-bottom: 2em;
     border-left: 1px solid #aaa;
@@ -220,7 +220,8 @@ img.mug {
   section#resume .col {
     float: none; }
     section#resume .col.left, section#resume .col.right {
-      width: 100%; }
+      width: 100%;
+      padding: 0; }
 
   section.projects a, section.projects img {
     height: 175px; } }
@@ -233,7 +234,7 @@ img.mug {
 @media print {
   body {
     background-color: white;
-    font-size: 70%; }
+    font-size: 71%; }
 
   header {
     box-shadow: none;
