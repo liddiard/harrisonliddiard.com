@@ -102,9 +102,19 @@ section .card-contents {
     margin: 0.1em; }
   section .card-contents .descriptor {
     color: #ccc; }
-section.rotator {
+section.project-media {
   margin: 0 40px 0 420px;
   overflow-x: hidden; }
+section.video-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0; }
+  section.video-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 section#resume {
   margin: 0 auto;
   padding: 10px;
@@ -197,7 +207,7 @@ img.mug {
   aside.project {
     padding-left: 20px; }
 
-  section.rotator {
+  section.project-media {
     margin-right: 20px;
     margin-left: 400px; } }
 @media screen and (max-width: 860px) {
@@ -206,7 +216,7 @@ img.mug {
     width: inherit;
     padding-right: 20px; }
 
-  section.rotator {
+  section.project-media {
     margin: 20px; } }
 @media screen and (max-width: 640px) {
   header {

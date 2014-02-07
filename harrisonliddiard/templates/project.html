@@ -26,8 +26,14 @@
     <p class="summary">{{ project.summary|markdown }}</p>
 </aside>
 
+{% if project.vimeo %}
+    <section class="project-media video-wrap">
+        <iframe src="//player.vimeo.com/video/{{ project.vimeo }}?color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </section>
+{% endif %}
+
 {% if gallery %}
-    <section class="rotator">
+    <section class="project-media rotator">
         <div class="flexslider">
             <ul class="slides">
             {% for image in gallery %}

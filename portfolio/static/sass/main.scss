@@ -145,9 +145,21 @@ section {
         }
     }
 
-    &.rotator {
+    &.project-media {
         margin: 0 40px 0 420px;
         overflow-x: hidden;
+    }
+
+    &.video-wrap {
+        position: relative;
+        padding-bottom: 56.25%; // 16x9
+        height: 0;
+
+        iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+        }
     }
 
     &#resume {
@@ -289,7 +301,7 @@ img.mug {
         padding-left: 20px;
     }
 
-    section.rotator {
+    section.project-media {
         margin-right: 20px;
         margin-left: 400px;
     }
@@ -302,7 +314,7 @@ img.mug {
         padding-right: 20px;
     }
 
-    section.rotator {
+    section.project-media {
         margin: 20px;
     }
 }
