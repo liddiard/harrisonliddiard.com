@@ -11,8 +11,8 @@ class Project(models.Model):
     skills = models.ManyToManyField('Skill')
     link = models.URLField(blank=True)
     github = models.URLField(blank=True)
-    vimeo = models.URLField(blank=True)
-    summary = models.TextField()
+    vimeo = models.CharField(max_length=16, blank=True)
+    summary = models.TextField(blank=True)
     date_added = models.DateField(auto_now_add=True)
     position = models.PositiveIntegerField(default=0)
 
