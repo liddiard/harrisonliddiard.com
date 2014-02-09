@@ -24,7 +24,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '.herokuapp.com', 'harrisonliddiard.com']
+ALLOWED_HOSTS = ['localhost', '.herokuapp.com', '*.harrisonliddiard.com']
 
 
 # Application definition
