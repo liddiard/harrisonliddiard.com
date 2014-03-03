@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<section class="projects">
+<section class="content">
 {% for project in projects %}
     <a href="{% url 'project' project.slug %}">
         <img src="{{ MEDIA_URL }}{{ project.cover_image }}"/>
