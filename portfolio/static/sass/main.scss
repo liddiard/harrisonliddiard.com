@@ -342,7 +342,7 @@ img.mug {
         }
     }
 
-    section.projects {
+    section.content {
         a, img {
             height: 175px;
         }
@@ -350,7 +350,7 @@ img.mug {
 }
 
 @media screen and (max-width: 500px) {
-    section.projects {
+    section.content {
         a, img {
             height: 135px;
         }
@@ -358,7 +358,7 @@ img.mug {
 }
 
 @media screen and (max-width: 400px) {
-    section.projects {
+    section.content {
         a, img {
             height: 100px;
         }
