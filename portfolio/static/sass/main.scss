@@ -333,12 +333,18 @@ img.mug {
         width: 40px;
     }
 
-    section#resume .col {
-        float: none;
+    section#resume {
+        .col {
+            float: none;
 
-        &.left, &.right {
-            width: 100%;
-            padding: 0;
+            &.left, &.right {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        .item {
+            padding-left: 0.5em;
         }
     }
 
