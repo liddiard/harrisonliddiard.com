@@ -235,6 +235,8 @@ img.mug {
       padding: 0; }
   section#resume .item {
     padding-left: 0.5em; }
+  section#resume .date {
+    font-size: 85%; }
 
   section.content a, section.content img {
     height: 175px; } }
