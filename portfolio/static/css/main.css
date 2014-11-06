@@ -125,6 +125,11 @@ section#resume {
     margin: 1.5em 0 0.75em 0; }
   section#resume h3, section#resume h4 {
     margin-bottom: 0.25em; }
+  section#resume ul {
+    list-style-type: square;
+    padding: 0 0 0 1.2em; }
+    section#resume ul li {
+      margin-bottom: 0.25em; }
   section#resume .col {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
