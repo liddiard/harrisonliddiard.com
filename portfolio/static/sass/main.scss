@@ -119,8 +119,8 @@ section {
         background-color: rgba(0,0,0, 0.85);
         opacity: 0;
         text-align: center;
-        -webkit-transition: opacity 0.25s; 
-        transition: opacity 0.25s; 
+        -webkit-transition: opacity 0.25s;
+        transition: opacity 0.25s;
         font-family: 'Oxygen', sans-serif;
 
         &:hover {
@@ -215,7 +215,7 @@ section {
         .position, .school {
             font-weight: bold;
         }
-        
+
         .date {
             font-weight: normal;
             float: right;
@@ -247,6 +247,44 @@ section {
             text-align: center;
         }
     }
+
+    &#inspiration {
+        max-width: 580px;
+        padding: 0 1em;
+        margin: 0 auto;
+
+        h2 {
+            margin-bottom: 0;
+        }
+
+        h3.author {
+            margin-top: 0;
+        }
+
+        > section {
+            margin-bottom: 4em;
+        }
+
+        blockquote {
+            font-size: 1.2em;
+
+            cite {
+                float: right;
+                margin-top: 0.5em;
+
+                em {
+                    font-style: normal;
+                }
+            }
+        }
+
+        .verse-number {
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-right: 0.25em;
+            color: gray;
+        }
+    }
 }
 
 aside.project {
@@ -266,7 +304,7 @@ aside.project {
     .descriptor, .involvement, .project-link, .github-link {
         display: block;
     }
-    
+
     .project-link {
         margin-bottom: 1.5em;
         font-weight: bold;
@@ -434,7 +472,7 @@ img.mug {
         .references {
             display: none;
         }
-        
+
         .print {
             display: none;
         }

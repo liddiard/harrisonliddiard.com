@@ -8,7 +8,7 @@ from .models import Project, Skill, Image
 class FrontView(TemplateView):
 
     template_name = "portfolio_front.html"
-    
+
     def get_context_data(self, **kwargs):
         context = super(FrontView, self).get_context_data(**kwargs)
         context['projects'] = Project.objects.order_by('position')
@@ -45,5 +45,10 @@ class SkillView(TemplateView):
 
 
 class ResumeView(TemplateView):
-    
+
     template_name = "resume.html"
+
+
+class InspirationView(TemplateView):
+
+    template_name = "inspiration.html"

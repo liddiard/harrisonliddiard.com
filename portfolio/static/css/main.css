@@ -168,6 +168,28 @@ section#resume {
     padding: 1.5em 0;
     font-size: 0.7em;
     text-align: center; }
+section#inspiration {
+  max-width: 580px;
+  padding: 0 1em;
+  margin: 0 auto; }
+  section#inspiration h2 {
+    margin-bottom: 0; }
+  section#inspiration h3.author {
+    margin-top: 0; }
+  section#inspiration > section {
+    margin-bottom: 4em; }
+  section#inspiration blockquote {
+    font-size: 1.2em; }
+    section#inspiration blockquote cite {
+      float: right;
+      margin-top: 0.5em; }
+      section#inspiration blockquote cite em {
+        font-style: normal; }
+  section#inspiration .verse-number {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-right: 0.25em;
+    color: gray; }
 
 aside.project {
   float: left;
@@ -286,3 +308,5 @@ img.mug {
       display: none; }
     section#resume .print {
       display: none; } }
+
+/*# sourceMappingURL=main.css.map */
