@@ -263,19 +263,19 @@ section {
 
         > section {
             margin-bottom: 4em;
+            overflow: hidden;
         }
 
         blockquote {
             font-size: 1.2em;
-            overflow: hidden;
+        }
 
-            cite {
-                float: right;
-                margin-top: 0.5em;
+        cite {
+            float: right;
+            margin-top: 0.5em;
 
-                em {
-                    font-style: normal;
-                }
+            em {
+                font-style: normal;
             }
         }
 

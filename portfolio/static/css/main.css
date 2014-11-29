@@ -177,15 +177,15 @@ section#inspiration {
   section#inspiration h3.author {
     margin-top: 0; }
   section#inspiration > section {
-    margin-bottom: 4em; }
-  section#inspiration blockquote {
-    font-size: 1.2em;
+    margin-bottom: 4em;
     overflow: hidden; }
-    section#inspiration blockquote cite {
-      float: right;
-      margin-top: 0.5em; }
-      section#inspiration blockquote cite em {
-        font-style: normal; }
+  section#inspiration blockquote {
+    font-size: 1.2em; }
+  section#inspiration cite {
+    float: right;
+    margin-top: 0.5em; }
+    section#inspiration cite em {
+      font-style: normal; }
   section#inspiration .verse-number {
     font-size: 0.9em;
     font-weight: bold;
