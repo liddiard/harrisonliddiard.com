@@ -61,13 +61,6 @@ header {
         text-decoration: none;
     }
 
-    #tagline {
-        font-family: 'Oxygen', sans-serif;
-        font-size: 1.5em;
-        margin-bottom: 1.25em;
-        display: none;
-    }
-
     ul#contact {
         font-family: 'Oxygen', sans-serif;
         display: none;
@@ -75,7 +68,7 @@ header {
         padding: 0;
         text-align: center;
         font-size: 1.2em;
-        margin: 0;
+        margin: 0.5em 0 0;
         border-top: 1px solid #bbb;
         border-bottom: 1px solid #bbb;
         padding: 0.4em 0;
@@ -220,6 +213,11 @@ section {
             font-weight: normal;
             float: right;
             color: #aaa;
+        }
+
+        .project-name {
+            font-weight: bold;
+            margin-right: 0.4em;
         }
 
         .print {
@@ -438,10 +436,6 @@ img.mug {
         ul#contact {
             display: block;
         }
-
-        #tagline {
-            display: block;
-        }
     }
 
     nav {
@@ -469,10 +463,6 @@ img.mug {
 
         .item {
             border-left: 1px solid #bbb;
-        }
-
-        .references {
-            display: none;
         }
 
         .print {

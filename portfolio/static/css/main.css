@@ -41,11 +41,6 @@ header {
     margin: 0 auto; }
   header #banner:hover {
     text-decoration: none; }
-  header #tagline {
-    font-family: 'Oxygen', sans-serif;
-    font-size: 1.5em;
-    margin-bottom: 1.25em;
-    display: none; }
   header ul#contact {
     font-family: 'Oxygen', sans-serif;
     display: none;
@@ -53,7 +48,7 @@ header {
     padding: 0;
     text-align: center;
     font-size: 1.2em;
-    margin: 0;
+    margin: 0.5em 0 0;
     border-top: 1px solid #bbb;
     border-bottom: 1px solid #bbb;
     padding: 0.4em 0; }
@@ -151,6 +146,9 @@ section#resume {
     font-weight: normal;
     float: right;
     color: #aaa; }
+  section#resume .project-name {
+    font-weight: bold;
+    margin-right: 0.4em; }
   section#resume .print {
     float: right;
     color: black;
@@ -286,8 +284,6 @@ img.mug {
     padding-bottom: 0; }
     header ul#contact {
       display: block; }
-    header #tagline {
-      display: block; }
 
   nav {
     display: none; }
@@ -306,8 +302,6 @@ img.mug {
       font-size: 200%; }
     section#resume .item {
       border-left: 1px solid #bbb; }
-    section#resume .references {
-      display: none; }
     section#resume .print {
       display: none; } }
 
