@@ -120,11 +120,16 @@ section#resume {
     margin: 1.4em 0 0.75em 0; }
   section#resume h3, section#resume h4 {
     margin-bottom: 0.25em; }
+  section#resume h3.position {
+    margin-bottom: 0.2em; }
+  section#resume h4.company {
+    margin-bottom: 0; }
   section#resume ul {
     list-style-type: square;
-    padding: 0 0 0 1.2em; }
+    padding: 0 0 0 1.2em;
+    margin: 0.6em 0; }
     section#resume ul li {
-      margin-bottom: 0.25em; }
+      margin-bottom: 0.3em; }
   section#resume .col {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -157,10 +162,17 @@ section#resume {
     section#resume .print img {
       padding-left: 1px;
       vertical-align: bottom; }
-  section#resume .references {
-    clear: both;
+  section#resume .more {
     padding: 0.5em 0;
-    color: black; }
+    color: black;
+    clear: both;
+    overflow: hidden; }
+    section#resume .more a {
+      text-decoration: underline; }
+    section#resume .more .experience {
+      float: left; }
+    section#resume .more .projects {
+      float: right; }
   section#resume .footer {
     clear: both;
     padding: 1.5em 0;
