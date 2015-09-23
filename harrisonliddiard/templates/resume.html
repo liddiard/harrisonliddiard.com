@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block title %}Resum&eacute; | Harrison Liddiard{% endblock %}
+
+{% block content %}
+
+<section id="resume">
+    <div class="print">Print <img src="{{ STATIC_URL }}img/print.png"/></div>
+    <h1>Resum&eacute;</h1>
+    <section class="col left">
+        <h2>Work Experience</h2>
+        <div class="item">
+            <h3 class="position">Web Developer &amp; Designer <span class="date">Sept. 2014 &ndash; present</span></h3>
+            <h4 class="company">UCLA Athletics</h4>
+            <ul>
+                <li>Design and create custom pages for major athletic events.</li>
+                <li>Create database-driven web applications using Django and AngularJS.</li>
+                <li>Work with NeuLion, the uclabruins.com website vendor, to identify and resolve site issues.</li>
+                <li>Established a style guide for the website.</li>
+            </ul>
+        </div>
+        <div class="item">
+            <h3 class="position">Digital Managing Editor <span class="date">June 2014 &ndash; present</span></h3>
+            <h4 class="company">Daily Bruin</h4>
+            <ul>
+                <li>Manage the online, video, radio, and blogging departments of <em>The Bruin</em>.</li>
+                <li>Coordinate multimedia coverage and collaboration on features.</li>
+                <li>Critique and guide departments&rsquo; content and operations.</li>
+            </ul>
+        </div>
+        <div class="item">
+            <h3 class="position">Contract Web Developer <span class="date">2012 &ndash; present</span></h3>
+            <h4 class="company">Los Angeles Times, DesignForest, et al.</h4>
+            <ul>
+                <li>Create custom web applications, websites, and content management systems for businesses to improve workflow, online presence, and insights with collected data.</li>
+                <li>Meet with clients to understand expectations and offer solutions before and during development process.</li>
+            </ul>
+        </div>
+        <div class="item">
+            <h3 class="position">Online Editor <span class="date">June 2013 &ndash; June 2014</span></h3>
+            <h4 class="company">Daily Bruin</h4>
+            <ul>
+                <li>Managed a department of 30 developers.</li>
+                <li>Interviewed and hired applicants, organized and managed project teams.</li>
+                <li>Taught developers how to work with development tools. (Git, Django, WordPress, jQuery, etc.)</li>
+            <ul>
+        </div>
+        <div class="item">
+            <h3 class="position">Product Engineering Intern <span class="date">Summer 2012</span></h3>
+            <h4 class="company">Microchip Technology Inc.</h4>
+            <ul>
+                <li>Built and tested printed circuit boards (PCBs) to ship to clients.</li>
+                <li>Assisted with hands-on instructional labs for engineers.</li>
+                <li>Diagrammed, prototyped, and programmed software in C for a laser spirograph to demonstrate the capabilities of one of the company&rsquo;s microcontrollers.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="col right">
+        <h2>Education</h2>
+        <div class="item">
+            <h3 class="school">UCLA <span class="date">expected 2017</h3>
+            <h4>Linguistics and Computer Science</h4>
+        </div>
+        <h2>Technical Skills</h2>
+        <div class="item">
+            <h4>HTML, CSS, Sass</h4>
+            <h4>JavaScript, jQuery, AngularJS</h4>
+            <h4>Python &amp; Django</h4>
+            <h4>C++</h4>
+            <h4>Database design</h4>
+            <h4>Git, Shell</h4>
+        </div>
+        <h2>Projects</h2>
+        <div class="item">
+            <h4><span class="project-name">sepalnote.com</span> hierarchical note-taking webapp. AngularJS and Django (under development).</h4>
+            <h4><span class="project-name">monitor404.com</span> HTTP 404 error monitoring as a service. Python Celery, Stripe API, and SSL.</h4>
+            <h4><span class="project-name">kikl.co</span> shortened links with memorable, unique URLs. PostgreSQL and Django.</h4>
+            <h4><span class="project-name">gifdatabase.com</span> community-driven animated GIF tagging and searching. jQuery and Django.</h4>
+        </div>
+        <h2>Additional Skills</h2>
+        <div class="item">
+            <h4>Teaching</h4>
+            <h4>Management</h4>
+            <h4>Graphic design (2D vector &amp; 3D modeling)</h4>
+            <h4>Photography / cinematography</h4>
+            <h4>Video and audio editing</h4>
+            <h4>Basic working proficiency in Spanish</h4>
+        </div>
+    </section>
+    <div class="references">References available upon request.</div>
+</section>
+
+{% endblock %}
+
