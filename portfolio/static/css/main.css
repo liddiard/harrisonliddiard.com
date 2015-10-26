@@ -42,7 +42,6 @@ header {
   header #banner:hover {
     text-decoration: none; }
   header ul#contact {
-    font-family: 'Oxygen', sans-serif;
     display: none;
     list-style-type: none;
     padding: 0;
