@@ -239,7 +239,8 @@ img.mug {
   border-radius: 50%;
   vertical-align: bottom;
   margin-right: 0.22em;
-  border: 1px solid #ddd; }
+  border: 1px solid #ddd;
+  width: 80px; }
 
 @media screen and (max-width: 1024px) {
   aside.project {
